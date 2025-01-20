@@ -56,10 +56,6 @@ project-directory/
    - Input `0` in days, `1` in hours, `15` in minutes, and `30` in seconds.
 2. Click "Submit" to see the countdown start.
 3. The timer counts down in real-time and plays a beep sound upon completion.
-
-## Screenshots
-- Coming soon!
-
 ## Future Enhancements
 - Add pause functionality.
 - Save the countdown state using local storage.
