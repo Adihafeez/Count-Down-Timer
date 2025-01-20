@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Deep blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* Clean white background */
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#1e3c72, #2a5298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    margin: 10px;
+    width: 90px;
+    text-align: center;
+    border: 2px solid #3b5998; /* Light blue border */
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+    input[type="number"]:focus {
+        border-color: #1e3c72; /* Darker blue on focus */
+        outline: none;
+    }
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+#start-button {
+    background-color: #1e3c72; /* Dark blue */
+}
+
+    #start-button:hover {
+        background-color: #2a5298; /* Lighter blue on hover */
+    }
+
+#submit-button {
+    background-color: #4caf50; /* Green */
+}
+
+    #submit-button:hover {
+        background-color: #45a049; /* Darker green */
+    }
+
+#reset-button {
+    background-color: #e74c3c; /* Red */
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    #reset-button:hover {
+        background-color: #c0392b; /* Darker red */
+    }
+
+.hidden {
+    display: none;
+}
+
+.countdown-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time-box {
+    background: #2a5298; /* Deep blue */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.time {
+    font-size: 48px;
+    font-weight: bold;
+    display: block;
+}
+
+.label {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #ffcc00; /* Bright yellow for label */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .time {
+        font-size: 36px;
+    }
+
+    .time-box {
+        padding: 10px 15px;
+    }
+
+    input[type="number"] {
+        width: 70px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
